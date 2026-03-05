@@ -181,7 +181,7 @@ This section documents every failure hit during this project. These weren't tuto
 
 **Before (broken graphs):**
 
-![Broken training graphs — all flat at zero](results/broken_results.png)
+![Broken training graphs — all flat at zero](results/broken_result.png)
 
 **After (working):**
 
