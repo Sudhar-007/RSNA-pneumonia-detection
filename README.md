@@ -181,8 +181,7 @@ This section documents every failure hit during this project. These weren't tuto
 
 **Before (broken graphs):**
 
-![Broken training graphs — all flat at zero](<img width="2400" height="1200" alt="broken_result" src="https://github.com/user-attachments/assets/32f5d721-b879-4013-bfd0-0cded96b39ed" />
-)
+![Broken training graphs — all flat at zero](Result\broken_result.png)
 
 **After (working):**
 
