@@ -166,7 +166,7 @@ This section documents every real failure hit during this project. These weren't
 
 **Before — broken training (all flat at zero):**
 
-![Broken training graphs — all flat at zero](results/broken_results.png)
+![Broken training graphs — all flat at zero](results/broken_result.png)
 
 ---
 
