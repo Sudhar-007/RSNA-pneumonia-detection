@@ -170,21 +170,7 @@ This section documents every real failure hit during this project. These weren't
 
 ---
 
-### ❌ Problem 2 — Folder Casing Mismatch
-
-**Symptom:** After fixing `nc`, training showed `0 images found` and `WARNING: Labels are missing or empty`.
-
-**Root cause:** Dataset folders were named `Images` and `Labels` (capital first letter). YOLO constructs the label path by replacing `images` → `labels` (lowercase) internally. Windows resolved the path due to case-insensitivity, but YOLO's cache scanner flagged all images as unlabelled because of the mismatch in its internal path logic.
-
-**Fix:**
-```cmd
-ren Images images
-ren Labels labels
-```
-
----
-
-### ❌ Problem 3 — Stale Cache Files
+### ❌ Problem 2 — Stale Cache Files
 
 **Symptom:** After fixing folder names, scanner still read old broken data.
 
@@ -198,7 +184,7 @@ del images\val.cache
 
 ---
 
-### ❌ Problem 4 — Virtual Environment Lost With Machine
+### ❌ Problem 3 — Virtual Environment Lost With Machine
 
 **Symptom:** `ModuleNotFoundError: No module named 'torch'`
 
@@ -208,7 +194,7 @@ del images\val.cache
 
 ---
 
-### ❌ Problem 5 — Corrupt Stray File in Training Folder
+### ❌ Problem 4 — Corrupt Stray File in Training Folder
 
 **Symptom:** `WARNING: ignoring corrupt image: Images\Train\New Bitmap image.bmp`
 
