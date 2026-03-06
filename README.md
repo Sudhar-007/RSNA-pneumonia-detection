@@ -1,4 +1,3 @@
-(https://github.com/user-attachments/files/25787778/README.3.md)
 # 🫁 RSNA Pneumonia Detection — YOLOv8 Object Detection
 
 A full end-to-end deep learning pipeline that detects pneumonia in chest X-rays using YOLOv8. Built on the [RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge) dataset — the model doesn't just classify whether pneumonia is present, it **localises exactly where** in the lung it appears by drawing bounding boxes around regions of opacity.
