@@ -286,7 +286,9 @@ yolo detect train data=rsna.yaml model=yolov8s.pt epochs=50 imgsz=640 batch=16 d
 | Recall | 36.2% | 41.3% | +5.1% |
 | Training time | 1.75 hrs | 5.63 hrs | +3.9 hrs |
 | Model size | 6.2MB | 22.5MB | 4x larger |
-| VRAM used | ~0.7GB | ~3GB | — |
+| VRAM used | ~2GB | ~6GB | — |
+
+Note: VRAM figures are total observed usage as seen in Task Manager, including CUDA context and display overhead
 
 The modest accuracy gains despite significantly more compute reflect the fundamental difficulty of this dataset — pneumonia opacity in X-rays is diffuse and subtle, ground truth labels have inherent noise from inter-radiologist disagreement, and top Kaggle competition entries with large ensembles reached only ~0.65 mAP50. The gains are real but the dataset is the ceiling, not the model.
 
